@@ -20,6 +20,10 @@ const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Header />}>
       <Route path="/" element={<Navigate to={"/mercury/overview"} />} />
+      <Route
+        path="/planet-project"
+        element={<Navigate to={"/mercury/overview"} />}
+      />
       <Route path="neptune" element={<Navigate to={"/neptune/overview"} />} />
       <Route path="venus" element={<Navigate to={"/venus/overview"} />} />
       <Route path="earth" element={<Navigate to={"/earth/overview"} />} />
