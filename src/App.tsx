@@ -21,7 +21,7 @@ const router = createBrowserRouter(
     <Route path="/" element={<Header />}>
       <Route path="/" element={<Navigate to={"/mercury/overview"} />} />
       <Route
-        path="/planet-project"
+        path="planet-project"
         element={<Navigate to={"/mercury/overview"} />}
       />
       <Route path="neptune" element={<Navigate to={"/neptune/overview"} />} />
@@ -326,7 +326,6 @@ const router = createBrowserRouter(
           element={
             <PlanetInfo
               image={data[7].images.internal}
-              extraImage={data[7].images.geology}
               details={data[7].structure}
               data={data[7]}
               color="#2D68F0"
