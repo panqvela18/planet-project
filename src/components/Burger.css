@@ -1,0 +1,41 @@
+.burger-list {
+  /* height: calc(100vh - 68px); */
+  /* height: 100vh; */
+  background-color: var(--main-bg-color);
+  position: absolute;
+  min-height: 1050px;
+  z-index: 1;
+  width: 100vw;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.show {
+  transform: translateX(0);
+}
+
+.burger-element-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 20px;
+  text-decoration: none;
+}
+
+.burger-element-wrapper {
+  display: flex;
+  align-items: center;
+}
+.planet-circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 25px;
+}
+
+.planet-element-name {
+  font-family: "League Spartan";
+  font-size: 25px;
+  font-weight: 700;
+  color: var(--white);
+}

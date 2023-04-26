@@ -1,0 +1,34 @@
+.tabs-desktop-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  display: none;
+}
+.tab-desktop {
+  width: 241px;
+  height: 40px;
+  background-color: transparent;
+  border: 1px solid gray;
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  user-select: none;
+  color: white;
+}
+
+.tabs-number {
+  padding: 7px 20px;
+  color: rgb(169, 169, 169);
+}
+
+.not-selected:hover {
+  background-color: #d8d8d8 !important;
+  opacity: 0.4;
+}
+
+@media (min-width: 768px) {
+  .tabs-desktop-container {
+    display: flex;
+  }
+}

@@ -1,0 +1,127 @@
+.planet-info-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 24px;
+  /* position: relative; */
+}
+
+.planet-img {
+  width: 250px;
+  margin-top: 40px;
+}
+
+.planet-title {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 52px;
+  color: var(--white);
+  margin-top: 40px;
+  margin-bottom: 16px;
+}
+
+.planet-description {
+  font-family: "League Spartan";
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--white);
+  line-height: 22px;
+}
+
+.source-wrapper {
+  font-family: "League Spartan";
+  color: var(--white);
+  opacity: 0.7;
+  display: flex;
+  align-items: center;
+  margin-top: 32px;
+  font-size: 14px;
+  margin-top: 28px;
+  margin-bottom: 28px;
+}
+
+.wiki-link {
+  margin-left: 5px;
+  margin-right: 2px;
+  color: var(--white);
+}
+
+.extra-image {
+  /* position: absolute;
+    width: 80px;
+    top: 255px;
+    left: 45%; */
+  width: 80px;
+  position: absolute;
+  top: 230px;
+}
+
+.planetstat-cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* margin-bottom: 24px; */
+  width: 100%;
+}
+
+.planet-title-description-source {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.images-cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 330px;
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .description-and-tabsDesktop {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    min-height: 330px;
+  }
+  .planet-info-container {
+    padding: 24px 45px;
+  }
+  .planet-title-description-source {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
+  .planetstat-cont {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 1024px) {
+  .image-and-description-and-tabs-desktop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .planet-title-description-source {
+    min-height: 350px;
+    width: 90%;
+  }
+  .description-and-tabsDesktop {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  }
+  .images-cont {
+    width: 100%;
+  }
+  .planetstat-cont {
+    margin-top: 87px;
+  }
+}

@@ -1,0 +1,43 @@
+.tabs-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 24px 0 24px;
+}
+
+.tab {
+  font-family: "League Spartan";
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 1.9px;
+  padding-bottom: 20px;
+  text-decoration: none;
+  user-select: none;
+}
+
+.active {
+  /* color: var(--mercury); */
+  /* border-bottom: 4px solid var(--mercury); */
+  border-bottom-width: 4px;
+  border-bottom-style: solid;
+  /* border-bottom-color: red; */
+}
+
+@media (min-width: 768px) {
+  .tabs-container {
+    display: none;
+  }
+  .display-none {
+    display: none;
+  }
+  .description-and-tabsDesktop {
+    display: flex;
+    justify-content: space-between;
+  }
+  .planet-title-description-source {
+    display: flex;
+    align-items: start;
+    text-align: left;
+    width: 50%;
+  }
+}
